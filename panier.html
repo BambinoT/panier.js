@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Panier</title>
+    <link rel="stylesheet" href="panier.css">
+</head>
+
+    <!-- onload="loadBody()" -->
+    <body >
+
+        <div class="container flex">
+            <div class="structure">
+              <h1>PANIER</h1>
+          
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th>Nom de l'article</th>
+                   
+                    <th>Quantité</th>
+                    <th>Prix unitaire</th>
+                    <th>Sous total</th>
+                   
+                  </tr>
+                </thead>
+                <tbody id="all_products">
+                  <tr> 
+                    <td class="article--name"><div class="card" style="margin-right:1rem"><img src="https://i.pinimg.com/236x/63/19/53/6319530fa171531e91d065359d561509.jpg"></div>
+                     <div><h3>chaussures</div></h3></div></td>
+                      <td class="quantity"> 
+                        <button class="qty-minus" id="1">-</button>
+                        <input type="text" readonly placeholder="Unit price"  class="qty" value="1" >
+                        <button class="qty-plus" id="1">+</button>
+                      </td>
+                      <td class="price"> 13000 fr</td> 
+                      <td class="subtotal">13000 fr</td>
+                     <td><a class="remove" id="1">Supprimer</a></div></td>
+                  </tr>
+                 
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td><input type="text" id="name_product" placeholder="Nom de l'article" contenteditable></td>
+                    <td><input  type="number" step="1" id="price_product" value="500" contenteditable></td>
+                    <td></td>
+            
+                    <td><button type="button" id="add_button">Ajouter un article</button></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <h2>Total : <span id="total_display">0 fr cfa</span></h2>
+            </div>
+          </div>
+          
+          
+          <script src="panier.js"></script>
+        
+    </body>
+  
+</html>
